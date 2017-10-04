@@ -1,0 +1,44 @@
+<view class="page_bd">
+  <view class="infoArea bottomLine">
+    <view class='leftTilte'>
+      <text class="mainTitle">安徽尚学堂教育（海恒分校）</text>
+      <text class='subTitle'>教育培训</text>
+    </view>
+    <view class="picRight">
+      <image src="http://owx19rg0d.bkt.clouddn.com/WechatIMG257.jpeg" mode='aspectFill'></image>
+    </view>
+  </view>
+  <view class='detailList'>
+    <view class="list_item" bindtap='findInMap'>
+      <view class="leftIcon"><image src="../../assets/location.png"></image></view>
+      <view class="rightArrow"><image src="../../assets/arrow.png"></image></view>
+      <view class="center">
+        <text>安徽省合肥市蜀山区经开区海恒步行街日之惠超市4楼青少年活动中心431室。</text>
+      </view>
+    </view>
+    <view class="list_item">
+      <view class="leftIcon"><image src="../../assets/time.png"></image></view>
+      <view class="center">
+        <text>9:00-21:30</text>
+      </view>
+    </view>
+    <view class="list_item" bindtap='callMe' data-phone="055166687909">
+      <view class="leftIcon"><image src="../../assets/tel.png"></image></view>
+      <view class="rightArrow"><image src="../../assets/arrow.png"></image></view>
+      <view class="center">
+        <text>0551-66687909</text>
+      </view>
+    </view>
+  </view>
+  <view class="pic_show">
+    <view class="title">
+      <view class="icon"><image src="../../assets/pic.png"></image></view>
+      <view class="pic_title"><text>门店展示</text></view>
+    </view>
+    <view class="pic_show_content">
+      <view class="item" wx:for="{{imgs}}" wx:for-index='idx' wx:key="{{idx}}" id="{{idx}}" bindtap='previewImg'>
+          <image src="{{item}}" mode='aspectFill'></image>
+      </view>
+    </view>
+  </view>
+</view>
